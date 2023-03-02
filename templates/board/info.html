@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ board.title }}</title>
+</head>
+<body>
+    <p>
+        <h1>제목 : {{ board.tile }}</h1>
+        <h4>작성자 : <a href="mailto:{{ board.created_by.email }}">{{ board.created_by.name }}</a></h4>
+        내용 : {{ board.text }}
+    </p>
+    
+    
+    <li><a href="{{ url_for('board_list') }}">Back to board list</a></li>
+    <li><a href="{{ url_for('index') }}">Back to Flask Example</a></li>
+</body>
+</html>

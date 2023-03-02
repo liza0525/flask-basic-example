@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board</title>
+</head>
+<body>
+    <h1>Board List</h1>
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>제목</th>
+            <th>작성자</th>
+        </tr>
+        {% for board in boards %}
+        <tr>
+            <td>{{ board.id }}</td>
+            <td><a href="{{ url_for('board_info', board_id=board.id) }}">{{ board.title }}</a></td>
+            <td>{{ board.created_by.name }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <li><a href="/">Back to Flask Example Hompage</a></li>
+</body>
+</html>
