@@ -43,7 +43,10 @@ flask-bagic-example
     > pip install -r requirements.txt
     ```
 
-3. `.env.default` 파일을 `.env`로 변경 후, 필요한 내용을 추가합니다.
+3. 다음 명령어를 통해 `.env.default` 파일을 `.env`로 복사한 후, 환경설정 값을 세팅합니다.
+    ```sh
+    > cp .env.default .env
+    ```
 
 4. 서버를 실행합니다.
     ```shell
