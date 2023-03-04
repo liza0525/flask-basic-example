@@ -59,6 +59,9 @@ flask-bagic-example
     http://localhost:5000/
     ```
 
+6. 서버 종료
+`Ctrl + C`
+
 ## 📌Version 정보
 ### ver0.0.1
 #### Boards
