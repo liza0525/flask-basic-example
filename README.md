@@ -75,7 +75,7 @@ flask-bagic-example
 
 ## 📌Version 정보
 ### ver0.0.2
-### WSGI 적용
+#### WSGI 적용
 - gunicorn 스크립트 추가합니다.(linux/macOS)
 - waitress 스크립트 추가합니다.(windows)
 ### ver0.0.1
